@@ -21,7 +21,7 @@ _A command-line tool to calculate the `Combat Speed` of the fleet in the game `W
 
 ## Supported Platforms
 
--[x] Windows
+- [x] Windows
 
 ## Dependencies
 
