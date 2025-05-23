@@ -1,23 +1,34 @@
+<div align="center">
+
 # WarshipGirlsR Speed Calculator
 
 [简体中文](README.md) | **English**
 
-[![License](https://img.shields.io/github/license/syzomnia-el/WarshipGirlsR-Speed-Calculator?style=flat-square)](LICENSE)
-[![Python](https://img.shields.io/badge/python-3.13+-blue?style=flat-square)](https://www.python.org/)
-[![uv](https://img.shields.io/badge/uv-0.7+-blue?style=flat-square)](https://docs.astral.sh/uv/)
-[![codecov](https://codecov.io/gh/syzomnia-el/WarshipGirlsR-Speed-Calculator/graph/badge.svg?token=T3Q72DSMHL)](https://codecov.io/gh/syzomnia-el/WarshipGirlsR-Speed-Calculator)
-[![GitHub Release (latest by date)](https://img.shields.io/github/v/release/syzomnia-el/WarshipGirlsR-Speed-Calculator?style=flat-square)](https://github.com/syzomnia-el/WarshipGirlsR-Speed-Calculator/releases)
-[![GitHub Issues](https://img.shields.io/github/issues/syzomnia-el/WarshipGirlsR-Speed-Calculator?style=flat-square)](https://github.com/syzomnia-el/WarshipGirlsR-Speed-Calculator/issues)
+_A command-line tool to calculate the `Combat Speed` of the fleet in the game `Warship Girls R`_
 
-A command-line tool to calculate the `Combat Speed` of the fleet in the game `Warship Girls R`
+[![GitHub License](https://img.shields.io/github/license/syzomnia-el/WarshipGirlsR-Speed-Calculator)](https://github.com/syzomnia-el/WarshipGirlsR-Speed-Calculator/main/LICENSE)
+[![GitHub Release (latest by date)](https://img.shields.io/github/v/release/syzomnia-el/WarshipGirlsR-Speed-Calculator?include_prereleases&sort=date&display_name=release)](https://github.com/syzomnia-el/WarshipGirlsR-Speed-Calculator/releases)
+[![Python Version](https://img.shields.io/badge/python-3.11%20%7C%203.12%20%7C%203.13-blue)](https://www.python.org)
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/syzomnia-el/WarshipGirlsR-Speed-Calculator/codecov.yml)](https://github.com/syzomnia-el/WarshipGirlsR-Speed-Calculator/actions/workflows/codecov.yml)
+[![Codecov](https://img.shields.io/codecov/c/gh/syzomnia-el/WarshipGirlsR-Speed-Calculator?token=T3Q72DSMHL)](https://codecov.io/gh/syzomnia-el/WarshipGirlsR-Speed-Calculator)
+
+</div>
 
 ## Features
 
-- Calculate the `Combat Speed` of the fleet in the game `Warship Girls R`. Formula reference: [Combat Mechanics - Warship Girls R Wiki](https://www.zjsnrwiki.com/wiki/%E6%88%98%E6%96%97%E6%9C%BA%E5%88%B6#%E6%88%98%E6%9C%AF%E8%BF%82%E5%9B%9E).
+- Calculate the `Combat Speed` of the fleet in the game `Warship Girls R`. Formula
+  reference: [Combat Mechanics - Warship Girls R Wiki](https://www.zjsnrwiki.com/wiki/%E6%88%98%E6%96%97%E6%9C%BA%E5%88%B6#%E6%88%98%E6%9C%AF%E8%BF%82%E5%9B%9E).
 
 ## Supported Platforms
 
 -[x] Windows
+
+## Dependencies
+
+- [Python 3.13+](https://www.python.org)
+- [uv](https://docs.astral.sh/uv)
+- [PyInstaller](https://pyinstaller.org)
+- [Coverage](https://coverage.readthedocs.io)
 
 ## Download
 
@@ -57,13 +68,6 @@ mean sss
 # ValueError: could not convert string to float: 'sss'
 ```
 
-## Dependencies
-
-- [Python 3.13+](https://www.python.org/)
-- [uv](https://docs.astral.sh/uv/)
-- [PyInstaller](https://pyinstaller.org/)
-- [Coverage](https://coverage.readthedocs.io/)
-
 ## Development
 
 - Clone the repository:
@@ -97,7 +101,7 @@ uv run coverage html
 - Build the executable:
 
 ```bash
-./pkg.ps1
+.\pkg.ps1
 ```
 
 or

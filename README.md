@@ -1,19 +1,23 @@
+<div align="center">
+
 # WarshipGirlsR Speed Calculator
 
 **简体中文** | [English](README_en.md)
 
-[![License](https://img.shields.io/github/license/syzomnia-el/WarshipGirlsR-Speed-Calculator?style=flat-square)](LICENSE)
-[![Python](https://img.shields.io/badge/python-3.13+-blue?style=flat-square)](https://www.python.org/)
-[![uv](https://img.shields.io/badge/uv-0.7+-blue?style=flat-square)](https://docs.astral.sh/uv/)
-[![codecov](https://codecov.io/gh/syzomnia-el/WarshipGirlsR-Speed-Calculator/graph/badge.svg?token=T3Q72DSMHL)](https://codecov.io/gh/syzomnia-el/WarshipGirlsR-Speed-Calculator)
-[![GitHub Release (latest by date)](https://img.shields.io/github/v/release/syzomnia-el/WarshipGirlsR-Speed-Calculator?style=flat-square)](https://github.com/syzomnia-el/WarshipGirlsR-Speed-Calculator/releases)
-[![GitHub Issues](https://img.shields.io/github/issues/syzomnia-el/WarshipGirlsR-Speed-Calculator?style=flat-square)](https://github.com/syzomnia-el/WarshipGirlsR-Speed-Calculator/issues)
+_用于游戏《战舰少女R》中舰队作战航速计算的命令行工具_
 
-一款用于游戏《战舰少女R》中舰队`作战航速`计算的命令行工具
+[![GitHub License](https://img.shields.io/github/license/syzomnia-el/WarshipGirlsR-Speed-Calculator)](https://github.com/syzomnia-el/WarshipGirlsR-Speed-Calculator/main/LICENSE)
+[![GitHub Release (latest by date)](https://img.shields.io/github/v/release/syzomnia-el/WarshipGirlsR-Speed-Calculator?include_prereleases&sort=date&display_name=release)](https://github.com/syzomnia-el/WarshipGirlsR-Speed-Calculator/releases)
+[![Python Version](https://img.shields.io/badge/python-3.11%20%7C%203.12%20%7C%203.13-blue)](https://www.python.org)
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/syzomnia-el/WarshipGirlsR-Speed-Calculator/codecov.yml)](https://github.com/syzomnia-el/WarshipGirlsR-Speed-Calculator/actions/workflows/codecov.yml)
+[![Codecov](https://img.shields.io/codecov/c/gh/syzomnia-el/WarshipGirlsR-Speed-Calculator?token=T3Q72DSMHL)](https://codecov.io/gh/syzomnia-el/WarshipGirlsR-Speed-Calculator)
+
+</div>
 
 ## 功能
 
-- 计算游戏《战舰少女R》中舰队的`作战航速`，公式参考：[战斗机制 - 舰R百科](https://www.zjsnrwiki.com/wiki/%E6%88%98%E6%96%97%E6%9C%BA%E5%88%B6#%E6%88%98%E6%9C%AF%E8%BF%82%E5%9B%9E)。
+- 计算游戏《战舰少女R》中舰队的`作战航速`
+  ，公式参考：[战斗机制 - 舰R百科](https://www.zjsnrwiki.com/wiki/%E6%88%98%E6%96%97%E6%9C%BA%E5%88%B6#%E6%88%98%E6%9C%AF%E8%BF%82%E5%9B%9E)。
 
 ## 平台支持
 
@@ -21,10 +25,10 @@
 
 ## 依赖
 
-- [Python 3.13+](https://www.python.org/)
-- [uv](https://docs.astral.sh/uv/)
-- [PyInstaller](https://pyinstaller.org/)
-- [Coverage](https://coverage.readthedocs.io/)
+- [Python 3.13+](https://www.python.org)
+- [uv](https://docs.astral.sh/uv)
+- [PyInstaller](https://pyinstaller.org)
+- [Coverage](https://coverage.readthedocs.io)
 
 ## 下载
 
@@ -96,7 +100,7 @@ uv run coverage html
 - 打包可执行文件：
 
 ```bash
-./pkg.ps1
+.\pkg.ps1
 ```
 
 或
