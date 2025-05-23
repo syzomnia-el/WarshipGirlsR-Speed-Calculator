@@ -6,7 +6,6 @@
 [![Python](https://img.shields.io/badge/python-3.13+-blue?style=flat-square)](https://www.python.org/)
 [![uv](https://img.shields.io/badge/uv-0.7+-blue?style=flat-square)](https://docs.astral.sh/uv/)
 [![codecov](https://codecov.io/gh/syzomnia-el/WarshipGirlsR-Speed-Calculator/graph/badge.svg?token=T3Q72DSMHL)](https://codecov.io/gh/syzomnia-el/WarshipGirlsR-Speed-Calculator)
-[![GitHub Repo stars](https://img.shields.io/github/stars/syzomnia-el/WarshipGirlsR-Speed-Calculator?style=social)](https://github.com/syzomnia-el/WarshipGirlsR-Speed-Calculator)
 [![GitHub Release (latest by date)](https://img.shields.io/github/v/release/syzomnia-el/WarshipGirlsR-Speed-Calculator?style=flat-square)](https://github.com/syzomnia-el/WarshipGirlsR-Speed-Calculator/releases)
 [![GitHub Issues](https://img.shields.io/github/issues/syzomnia-el/WarshipGirlsR-Speed-Calculator?style=flat-square)](https://github.com/syzomnia-el/WarshipGirlsR-Speed-Calculator/issues)
 
