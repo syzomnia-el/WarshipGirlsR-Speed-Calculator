@@ -99,7 +99,7 @@ uv run coverage html
 - 打包可执行文件：
 
 ```bash
-.\pkg.ps1
+./pkg.ps1
 ```
 
 或

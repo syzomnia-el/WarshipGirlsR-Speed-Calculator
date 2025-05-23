@@ -101,7 +101,7 @@ uv run coverage html
 - Build the executable:
 
 ```bash
-.\pkg.ps1
+./pkg.ps1
 ```
 
 or
