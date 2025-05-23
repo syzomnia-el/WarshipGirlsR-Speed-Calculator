@@ -2,11 +2,10 @@
 
 **简体中文** | [English](README_en.md)
 
+[![License](https://img.shields.io/github/license/syzomnia-el/WarshipGirlsR-Speed-Calculator?style=flat-square)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.13+-blue?style=flat-square)](https://www.python.org/)
 [![uv](https://img.shields.io/badge/uv-0.7+-blue?style=flat-square)](https://docs.astral.sh/uv/)
-[![License](https://img.shields.io/github/license/syzomnia-el/WarshipGirlsR-Speed-Calculator?style=flat-square)](LICENSE)
-[![Code Coverage](https://img.shields.io/codecov/c/github/syzomnia-el/WarshipGirlsR-Speed-Calculator?style=flat-square)](https://codecov.io/gh/syzomnia-el/WarshipGirlsR-Speed-Calculator)
-
+[![codecov](https://codecov.io/gh/syzomnia-el/WarshipGirlsR-Speed-Calculator/graph/badge.svg?token=T3Q72DSMHL)](https://codecov.io/gh/syzomnia-el/WarshipGirlsR-Speed-Calculator)
 [![GitHub Repo stars](https://img.shields.io/github/stars/syzomnia-el/WarshipGirlsR-Speed-Calculator?style=social)](https://github.com/syzomnia-el/WarshipGirlsR-Speed-Calculator)
 [![GitHub Release (latest by date)](https://img.shields.io/github/v/release/syzomnia-el/WarshipGirlsR-Speed-Calculator?style=flat-square)](https://github.com/syzomnia-el/WarshipGirlsR-Speed-Calculator/releases)
 [![GitHub Issues](https://img.shields.io/github/issues/syzomnia-el/WarshipGirlsR-Speed-Calculator?style=flat-square)](https://github.com/syzomnia-el/WarshipGirlsR-Speed-Calculator/issues)
@@ -20,8 +19,6 @@
 ## 平台支持
 
 -[x] Windows
--[ ] macOS
--[ ] Linux
 
 ## 依赖
 
@@ -78,6 +75,7 @@ git clone https://github.com/syzomnia-el/WarshipGirlsR-Speed-Calculator.git
 - 安装包管理工具 `uv` 及其他依赖：
 
 ```bash
+python -m pip install --upgrade pip
 python -m pip install uv
 uv sync
 ```
@@ -91,7 +89,7 @@ uv run src/mean.py
 - 使用覆盖率工具 `coverage` 运行测试：
 
 ```bash
-uv run coverage run -m unittest discover -s tests
+uv run coverage run --parallel-mode -m unittest discover -s tests
 uv run coverage report -m
 uv run coverage html
 ```
