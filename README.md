@@ -1,11 +1,10 @@
-<!--suppress HtmlDeprecatedAttribute -->
 <div align="center">
 
 # WarshipGirlsR Speed Calculator
 
 **简体中文** | [English](README_en.md)
 
-_一款用于游戏《战舰少女R》中舰队 `作战航速` 计算的命令行工具_
+_一款用于游戏《战舰少女R》中舰队`作战航速`计算的命令行工具_
 
 [![GitHub License](https://img.shields.io/github/license/syzomnia-el/WarshipGirlsR-Speed-Calculator)](LICENSE)
 [![GitHub Release (latest by date)](https://img.shields.io/github/v/release/syzomnia-el/WarshipGirlsR-Speed-Calculator?include_prereleases&sort=date&display_name=release)](https://github.com/syzomnia-el/WarshipGirlsR-Speed-Calculator/releases)
@@ -17,7 +16,7 @@ _一款用于游戏《战舰少女R》中舰队 `作战航速` 计算的命令�
 
 ## 作战航速
 
-游戏《战舰少女R》中用于 `战术迂回` 及 `航向判定` 的机制，舰队的 `作战航速` 由舰队中所有舰船的 `航速` 决定。
+游戏《战舰少女R》中用于`战术迂回`及`航向判定`的机制，舰队的`作战航速`由舰队中所有舰船的`航速`决定。
 
 > 参考：
 > [战斗机制 - 舰R百科](https://www.zjsnrwiki.com/wiki/%E6%88%98%E6%96%97%E6%9C%BA%E5%88%B6#%E6%88%98%E6%9C%AF%E8%BF%82%E5%9B%9E)
@@ -66,7 +65,7 @@ _一款用于游戏《战舰少女R》中舰队 `作战航速` 计算的命令�
 - **水下舰艇**：潜艇、炮潜、导潜
 - **水面舰艇**：其他类型舰船
 
-计算 `作战航速` 时，遵循以下规则：
+计算`作战航速`时，遵循以下规则：
 
 - 有水面舰艇时，水下舰艇不参与计算
 - 轻母、防驱、防巡虽然是护卫舰，但作为主力舰参与计算
@@ -98,14 +97,14 @@ mean
 # <提示信息>
 ```
 
-2. 计算仅由 `主力舰` 或 `护卫舰` 组成的舰队的 `作战航速`：
+2. 计算仅由`主力舰`或`护卫舰`组成的舰队的`作战航速`：
 
 ```bash
 mean 34,39,36
 # 36.33
 ```
 
-3. 计算由 `主力舰` 和 `护卫舰` 共同组成的舰队的 `作战航速`：
+3. 计算由`主力舰`和`护卫舰`共同组成的舰队的`作战航速`：
 
 ```bash
 mean 34,39,36 35,36
@@ -174,3 +173,7 @@ uv run pyinstaller -F --optimize 2 src/mean.py -n mean --distpath bin/ --clean
 ## 许可证
 
 本项目采用MIT许可证授权，详情请参阅 [LICENSE](LICENSE) 文件。
+
+本文[作战航速](#作战航速)部分，引用自[舰R百科](https://www.zjsnrwiki.com)，
+在 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans) 下提供，
+包括其附加条款。

@@ -1,4 +1,3 @@
-<!--suppress HtmlDeprecatedAttribute -->
 <div align="center">
 
 # WarshipGirlsR Speed Calculator
@@ -176,3 +175,7 @@ uv run pyinstaller -F --optimize 2 src/mean.py -n mean --distpath bin/ --clean
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+The Section [Combat Speed](#combat-speed) is quoted from [Warship Girls R Wiki](https://www.zjsnrwiki.com),
+licensed under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)
+with the additional terms.
