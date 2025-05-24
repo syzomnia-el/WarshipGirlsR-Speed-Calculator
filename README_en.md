@@ -1,3 +1,4 @@
+<!--suppress HtmlDeprecatedAttribute -->
 <div align="center">
 
 # WarshipGirlsR Speed Calculator
@@ -72,13 +73,14 @@ When calculating `Combat Speed`, adhere to the following rules:
 - CVL, AADG and CG are treated as capital ships in the calculation, despite being escort ships.
 
 The formula is as follows:
-$$
-\text{Combat Speed} = \begin{cases}
+
+```math
+\text{Combat Speed} = 
+\begin{cases}
 round \left(\cfrac{\sum \text{Speed}}{n}, 2 \right), & \text{if consist solely of capital ships or escort ships}\\
-\\
 floor \left(\min \left(\cfrac{\sum \text{Speed}_\text{capital ship}}{n_\text{capital ship}}, \cfrac{\sum \text{Speed}_\text{escort ship}}{n_{\text{escort ship}}} \right) \right), & \text{if consist of both capital ships and escort ships}
 \end{cases}
-$$
+```
 
 ## Supported Platforms
 

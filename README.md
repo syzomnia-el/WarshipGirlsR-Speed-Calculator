@@ -1,3 +1,4 @@
+<!--suppress HtmlDeprecatedAttribute -->
 <div align="center">
 
 # WarshipGirlsR Speed Calculator
@@ -72,13 +73,13 @@ _一款用于游戏《战舰少女R》中舰队 `作战航速` 计算的命令�
 
 计算公式如下：
 
-$$
-\text{作战航速} = \begin{cases}
+```math
+\text{作战航速} =
+\begin{cases}
 round \left(\cfrac{\sum \text{航速}}{n}, 2 \right), & \text{仅由主力舰或护卫舰组成}\\
-\\
 floor \left(\min \left(\cfrac{\sum \text{航速}_\text{主力舰}}{n_\text{主力舰}}, \cfrac{\sum \text{航速}_\text{护卫舰}}{n_{\text{护卫舰}}} \right) \right), & \text{由主力舰和护卫舰共同组成}
 \end{cases}
-$$
+```
 
 ## 平台支持
 
