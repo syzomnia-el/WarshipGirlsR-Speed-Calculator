@@ -46,7 +46,7 @@ In this case, `34,39,36` is the first group, and `35,36` is the second. \n"""
             with self.assertRaisesRegex(SystemExit, '2', msg='If too many arguments, exit with code 2.'):
                 main()
             output = buf.getvalue()
-        self.assertEqual(output, "TypeError: too many arguments, required 1 or 2 but got 3: ['34,', '39,', '36']\n",
+        self.assertEqual(output, "TypeError: too many arguments, required 0, 1 or 2 but got 3: ['34,', '39,', '36']\n",
                          msg='If more than two groups, raise a TypeError')
 
     @patch.object(sys, 'argv', ['mean.py', 'sss'])

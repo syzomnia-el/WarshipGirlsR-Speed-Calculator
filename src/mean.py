@@ -53,7 +53,7 @@ def main() -> None:
                 print(floor(min(avg1, avg2)))
             case _:
                 # If more than two groups, raise an error
-                raise TypeError(f'too many arguments, required 1 or 2 but got {len(argv)}: {argv}')
+                raise TypeError(f'too many arguments, required 0, 1 or 2 but got {len(argv)}: {argv}')
     except ValueError as e:
         # exit with code 5: data format error
         print(f'{e.__class__.__name__}: {e}')
