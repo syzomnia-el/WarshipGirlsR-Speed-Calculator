@@ -19,12 +19,18 @@ _A command-line tool to calculate the `Combat Speed` of the fleet in the game **
 In the game _**Warship Girls R**_, the `Combat Speed` of a fleet affects `Tactical Diversion` and
 `Course Determination` , and It is determined by the `Speed` of all ships in the fleet.
 
-> Reference:
-> [Combat Mechanics - Warship Girls R Wiki](https://www.zjsnrwiki.com/wiki/%E6%88%98%E6%96%97%E6%9C%BA%E5%88%B6#%E6%88%98%E6%9C%AF%E8%BF%82%E5%9B%9E)
+The formula is as follows:
+
+```math
+\text{Combat Speed} = 
+\begin{cases}
+round \left(\cfrac{\sum \text{Speed}}{n}, 2 \right), & \text{if consist solely of capital ships or escort ships}\\
+floor \left(\min \left(\cfrac{\sum \text{Speed}_\text{capital ship}}{n_\text{capital ship}}, \cfrac{\sum \text{Speed}_\text{escort ship}}{n_{\text{escort ship}}} \right) \right), & \text{if consist of both capital ships and escort ships}
+\end{cases}
+```
 
 <details>
-<summary>Mechanics Details</summary>
-<p>
+<summary><em>Mechanics Details</em></summary>
 The ship types in the game are as follows:
 
 - **Capital Ship**:
@@ -74,18 +80,10 @@ When calculating `Combat Speed`, adhere to the following rules:
 - If surface ships are present, underwater ships are excluded from the calculation.
 - CVL, AADG and CG are treated as capital ships in the calculation, despite being escort ships.
 
-The formula is as follows:
-
-```math
-\text{Combat Speed} = 
-\begin{cases}
-round \left(\cfrac{\sum \text{Speed}}{n}, 2 \right), & \text{if consist solely of capital ships or escort ships}\\
-floor \left(\min \left(\cfrac{\sum \text{Speed}_\text{capital ship}}{n_\text{capital ship}}, \cfrac{\sum \text{Speed}_\text{escort ship}}{n_{\text{escort ship}}} \right) \right), & \text{if consist of both capital ships and escort ships}
-\end{cases}
-```
-
-</p>
 </details>
+
+> Reference:
+> [Combat Mechanics - Warship Girls R Wiki](https://www.zjsnrwiki.com/wiki/%E6%88%98%E6%96%97%E6%9C%BA%E5%88%B6#%E6%88%98%E6%9C%AF%E8%BF%82%E5%9B%9E)
 
 ## Supported Platforms
 

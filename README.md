@@ -18,12 +18,18 @@ _一款用于游戏《战舰少女R》中舰队`作战航速`计算的命令行�
 
 游戏《战舰少女R》中用于`战术迂回`及`航向判定`的机制，舰队的`作战航速`由舰队中所有舰船的`航速`决定。
 
-> 参考：
-> [战斗机制 - 舰R百科](https://www.zjsnrwiki.com/wiki/%E6%88%98%E6%96%97%E6%9C%BA%E5%88%B6#%E6%88%98%E6%9C%AF%E8%BF%82%E5%9B%9E)
+计算公式如下：
+
+```math
+\text{作战航速} =
+\begin{cases}
+round \left(\cfrac{\sum \text{航速}}{n}, 2 \right), & \text{仅由主力舰或护卫舰组成}\\
+floor \left(\min \left(\cfrac{\sum \text{航速}_\text{主力舰}}{n_\text{主力舰}}, \cfrac{\sum \text{航速}_\text{护卫舰}}{n_{\text{护卫舰}}} \right) \right), & \text{由主力舰和护卫舰共同组成}
+\end{cases}
+```
 
 <details>
-<summary>机制详情</summary>
-<p>
+<summary><em>机制详情</em></summary>
 游戏中的舰船类型如下：
 
 - **主力舰**：
@@ -73,18 +79,10 @@ _一款用于游戏《战舰少女R》中舰队`作战航速`计算的命令行�
 - 有水面舰艇时，水下舰艇不参与计算
 - 轻母、防驱、防巡虽然是护卫舰，但作为主力舰参与计算
 
-计算公式如下：
-
-```math
-\text{作战航速} =
-\begin{cases}
-round \left(\cfrac{\sum \text{航速}}{n}, 2 \right), & \text{仅由主力舰或护卫舰组成}\\
-floor \left(\min \left(\cfrac{\sum \text{航速}_\text{主力舰}}{n_\text{主力舰}}, \cfrac{\sum \text{航速}_\text{护卫舰}}{n_{\text{护卫舰}}} \right) \right), & \text{由主力舰和护卫舰共同组成}
-\end{cases}
-```
-
-</p>
 </details>
+
+> 参考：
+> [战斗机制 - 舰R百科](https://www.zjsnrwiki.com/wiki/%E6%88%98%E6%96%97%E6%9C%BA%E5%88%B6#%E6%88%98%E6%9C%AF%E8%BF%82%E5%9B%9E)
 
 ## 平台支持
 
