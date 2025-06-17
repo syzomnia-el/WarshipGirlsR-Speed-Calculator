@@ -22,6 +22,9 @@ In the game _**Warship Girls R**_, the `Combat Speed` of a fleet affects `Tactic
 > Reference:
 > [Combat Mechanics - Warship Girls R Wiki](https://www.zjsnrwiki.com/wiki/%E6%88%98%E6%96%97%E6%9C%BA%E5%88%B6#%E6%88%98%E6%9C%AF%E8%BF%82%E5%9B%9E)
 
+<details>
+<summary>Mechanics Details</summary>
+<p>
 The ship types in the game are as follows:
 
 - **Capital Ship**:
@@ -35,7 +38,7 @@ The ship types in the game are as follows:
   | Large Cruiser, guided missile       | BG           |
   | Standard Aircraft Carrier           | CV           |
   | Armored Aircraft Carrier            | AV           |
-  | Крейсер，ракета                      | KP           |
+  | Крейсер, ракета                     | KP           |
   | Destroyer, anti-ship guided missile | ASDG         |
   | Submarine, guided missile           | SSG          |
   | Elite                               | /            |
@@ -80,6 +83,9 @@ round \left(\cfrac{\sum \text{Speed}}{n}, 2 \right), & \text{if consist solely o
 floor \left(\min \left(\cfrac{\sum \text{Speed}_\text{capital ship}}{n_\text{capital ship}}, \cfrac{\sum \text{Speed}_\text{escort ship}}{n_{\text{escort ship}}} \right) \right), & \text{if consist of both capital ships and escort ships}
 \end{cases}
 ```
+
+</p>
+</details>
 
 ## Supported Platforms
 
