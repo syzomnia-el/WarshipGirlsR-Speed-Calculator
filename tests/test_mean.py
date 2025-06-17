@@ -6,7 +6,7 @@ import sys
 from unittest import TestCase
 from unittest.mock import patch
 
-from mean import main
+from src.mean import main
 
 
 # noinspection PyUnresolvedReferences
