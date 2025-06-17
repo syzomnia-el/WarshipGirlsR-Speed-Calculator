@@ -68,7 +68,7 @@ def main() -> None:
             return
 
         res = do_calc(argv)
-        print(res)
+        print(f'{res:,}')
     except ValueError as e:
         # exit with code 5: data format error
         print(f'{e.__class__.__name__}: {e}')
